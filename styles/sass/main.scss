@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.box {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url(http://ashaval.com/wp-content/uploads/2019/05/Library.jpg);
+  #login {
+    background-color: rgba(0, 0, 0, 0.516);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    #email,
+    #password {
+      // width: 500px;
+      height: 60px;
+      border-radius: 15px;
+      border: none;
+      background: inherit;
+      color: white;
+      padding-left: 35px;
+      &::placeholder {
+        color: white;
+        // padding-left: 35px;
+        background: none;
+      }
+    }
+    #user {
+      color: white;
+      font-size: 23px;
+      position: absolute;
+      top: 323px;
+      left: 390px;
+    }
+    #email_icon {
+      color: white;
+      font-size: 23px;
+      position: absolute;
+      top: 415px;
+      left: 390px;
+    }
+    button {
+      &:hover {
+        background-color: rgba(13, 117, 255, 1);
+      }
+    }
+    #logo {
+      width: 300px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: rgba(13, 117, 255, 1);
+      }
+    }
+  }
+}
+
+@media (max-width: 820px ){
+  .box {
+    width: 100%;
+    height: 100vh;
+    #login {
+        width: 100%;
+        height: 100vh;
+        #user{
+            position: absolute;
+            top: 325px;
+            left: 214px;
+         }
+         #email_icon{
+            position: absolute;
+            top: 410px;
+            left: 214px;
+         }
+    }
+  }
+}
+@media (max-width: 412px ){
+    .box {
+      width: 100%;
+      height: 100vh;
+      #login {
+        #logo{
+            width: 250px;
+        }
+          width: 100%;
+          height: 100vh;
+          #user{
+              position: absolute;
+              top: 325px;
+              left: 110px;
+              font-size: 18px;
+           }
+           #email_icon{
+              position: absolute;
+              top: 415px;
+              left: 110px;
+              font-size: 18px;
+
+           }
+      }
+    }
+  }
+

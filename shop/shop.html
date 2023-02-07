@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/styles/css/shop.css">
+    </head>
+
+    <body class="">
+        <a href="../index.html"></a>
+        <div class="asides">  
+            <i class="fa-solid fa-xmark" id="asideX"></i>
+            <h1>Bookmarks</h1>
+            <p class="w-75 text-center">If you don’t like to read, you haven’t found the right book</p>
+            <!-- <div class="asides_card">
+                <div class="user">
+                    <h5>Language</h5>
+                    <p>author</p>
+                </div>
+                <div class="edit">
+                    <i class="fa-solid fa-delete-left" id="del"></i>
+                    <i class="fa-solid fa-book-open" id="read"></i>
+                </div>
+            </div> -->
+        </div>
+        <div class="container-fluid position-fixed " id="navbar">
+           
+            <div class="navbar border-bottom d-flex align-items-center justify-content-between">
+                <img src="../login/img/home-logo.svg" alt="" class="text-bg">
+                <input type="text" id="search" placeholder="Search books" class=" border     rounded-4 px-3">
+                <i class="fa-solid fa-sun" id="mode"></i>
+                <button id="logout" class="btn btn-primary">Logout</button>
+            </div>
+            <div class="nav d-flex justify-content-around mt-4 pb-3 border-bottom">
+            <i class="fa-solid fa-bars" id="bars"></i>
+              
+
+
+                <h4>Showing <span id="card-count"></span> Result(s)</h4>
+                <span class="d-flex gap-2 text-bg-secondary align-items-center rounded px-4"><i
+                        class="fa-solid fa-calendar fs-4 " id="new "></i>Order by newest</span>
+
+            </div>
+        </div>
+
+
+
+
+        <main class="position-relative">
+
+
+            <aside class="aside">
+                <h1>Bookmarks</h1>
+                <p class="w-75 text-center">If you don’t like to read, you haven’t found the right book</p>
+
+
+            </aside>
+
+
+            <section class="position-absolute bg-secondary bg-opacity-25" id="main_section">
+
+            </section>
+            <footer class="">
+                <nav aria-label="Page navigation example" id="footer_nav" class="paginationLink">
+                    <ul class="pagination">
+                        <li class="page-item" id="previus"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item" id="page1"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item" id="page2"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item" id="page3"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item" id="page4"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item" id="next"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+    </div>
+        <div class="modals">
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+        <script src="./shop.js"></script>
+    </body>
+<a href="../index.html"></a>
+</html>
